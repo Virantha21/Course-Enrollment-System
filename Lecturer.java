@@ -3,6 +3,7 @@ package javaClasses;
 
 public class Lecturer {
     
+    /*declare attributes of lecturer class*/
     private String lecturerId;
     private String firstName;
     private String lastName;
@@ -12,8 +13,10 @@ public class Lecturer {
     private String room;
     private String faculty;
     
-    public Lecturer(){}
+    public Lecturer(){} //constructor of lecturer class(not necessary)
     
+    
+    /*define set methods*/
     public void setLecturerId(String id){
         this.lecturerId = id;
     }
@@ -46,6 +49,8 @@ public class Lecturer {
         this.faculty = fac;
     }
     
+    
+    /*define get methods*/
     public String getLecturerId(){
         return this.lecturerId;
     }
