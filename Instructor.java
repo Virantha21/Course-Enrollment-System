@@ -58,5 +58,6 @@ public class Instructor {
     public String getEmail(){
         return this.email;
     }
+    
 }
 
