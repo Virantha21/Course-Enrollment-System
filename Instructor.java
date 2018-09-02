@@ -2,12 +2,15 @@ package javaClasses;
 
 public class Instructor {
     
+    /*attributes declaration of instructor class*/
     private String instrId;
     private String firstName;
     private String lastName;
     private String gender;
     private String email;
     
+    
+    /*set and get methods to instructor id*/
     public void setInstrId(String ins_id){
         this.instrId = ins_id;
     }
@@ -16,6 +19,8 @@ public class Instructor {
         return this.instrId;
     }
     
+    
+    /*set and get methods to first name*/
     public void setFirstName(String fName){
         this.firstName = fName;
     }
@@ -24,6 +29,8 @@ public class Instructor {
         return this.firstName;
     }
     
+    
+    /*set and get methods to last name*/
     public void setLastName(String lName){
         this.lastName = lName;
     }
@@ -32,6 +39,8 @@ public class Instructor {
         return this.lastName;
     }
     
+    
+    /*set and get methods to gender*/
     public void setGender(String gend){
         this.gender = gend;
     }
@@ -40,6 +49,8 @@ public class Instructor {
         return this.gender;
     }
     
+    
+    /*set and get methods to email*/
     public void setEmail(String mail){
         this.email = mail;
     }
