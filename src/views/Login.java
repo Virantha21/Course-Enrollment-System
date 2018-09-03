@@ -1,5 +1,5 @@
-
 package nsbm;
+
 import java.awt.HeadlessException;
 import java.awt.event.WindowEvent;
 import java.sql.Connection;
@@ -15,6 +15,7 @@ public class Login extends javax.swing.JFrame {
     dbConnection db;
     
     public Login() {
+        
         super("Login");
         initComponents();
 
