@@ -3,11 +3,13 @@ package javaClasses;
 
 public class MasterStudent extends Student{ //extend using parent class student
     
-    //private String stu_Id;
+    /*declaration of attributes*/
     private String qual_Type;
     private String institute;
     private String complete_Year;
     
+    
+    /*constructor overloading*/
     public MasterStudent(){}
     
     public MasterStudent(String stu_Id, String firstName, String lastName, String contactNo, String email, String address, String gender, String enrolldate, String dob, String qual_Type, String institute, String complete_Year){
@@ -28,6 +30,8 @@ public class MasterStudent extends Student{ //extend using parent class student
         super.setdob(dob);
     }
     
+    
+    /*get methods*/
     public String getQualType(){
         return this.qual_Type;
     }
@@ -40,6 +44,8 @@ public class MasterStudent extends Student{ //extend using parent class student
         return this.complete_Year;
     }
     
+    
+    /*set methods*/
     public void setQualType(String qualType){
         this.qual_Type = qualType;
     }

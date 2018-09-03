@@ -1,20 +1,8 @@
 package javaClasses;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-//import java.sql.SQLException;
-import java.sql.Statement;
-//import javax.swing.JOptionPane;
-//import static nsbm.BachelorStudentQualifications.conc;
-
-
 public class BachelorStudent extends Student { //inherit the super class student
-    
-    static Connection conc = null;
-    Statement stm = null;
-    ResultSet res;
-    
-    //private String stu_Id;
+
+    /*declare attributes*/
     private String exam_Year;
     private String district;
     private int island_Rank;
@@ -26,14 +14,15 @@ public class BachelorStudent extends Student { //inherit the super class student
     private String result_3;
     private String z_score;
     
+    
+    /*construtor overloading*/
     public BachelorStudent(){}
     
-    //public BachelorStudent(String stu_Id, String firstName, String lastName, String contactNo, String email, String address, String gender, String enrolldate, String dob, int island_Rank, String examYear, String AL_Results, String district){
+    public BachelorStudent(String stu_Id, String firstName, String lastName, String contactNo, String email, String address, String gender, String enrolldate, String dob, int island_Rank, String examYear, String AL_Results, String district){
         
         
-        //super(stuId, firstName, lastName, contactNo, email, address, gender, enrollDate, dateOfBirth);
-        //this.stu_Id = super.getstuId();
-        /*stuId = stuId;
+        super(stuId, firstName, lastName, contactNo, email, address, gender, enrollDate, dateOfBirth);
+        this.stu_Id = super.getstuId();
         this.firstName = firstName;
         this.lastName = lastName;
         this.contactNo = contactNo;
@@ -41,10 +30,9 @@ public class BachelorStudent extends Student { //inherit the super class student
         this.address = address;
         this.gender = gender;
         this.enrollDate = enrollDate;
-        this.dateOfBirth*/
-        //System.out.println(this.stu_Id);
+        this.dateOfBirth = dob;
             
-        /*this.exam_Year = examYear;
+        this.exam_Year = examYear;
         this.district = district;
         this.island_Rank = island_Rank;
         
@@ -57,28 +45,10 @@ public class BachelorStudent extends Student { //inherit the super class student
         super.setgender(gender);
         super.setenrolldate(enrolldate);
         super.setdob(dob);
-        
-       
-        /*sql = "INSERT INTO undergraduate (Student_Id, IslandRank, YearOfExam, AL_Results, District) "
-                    + "VALUES('"+this.stu_Id+"', '"+this.island_Rank+"', '"+this.exam_Year+"', '"+this.AL_Results+"', '"+this.district+"');";
-        
-        System.out.println(sql);
-        
-        try{
-            conc = Login.conn;
-            
-            stm = conc.createStatement();
-            stm.executeUpdate(sql);
-            if((stm.executeUpdate(sql)) == 1){
-                JOptionPane.showMessageDialog(null, "Data Inserted Successfully!");
-            }
-            else{
-                JOptionPane.showMessageDialog(null, "Something Wrong!");
-            }
-        }
-        catch(Exception er){
-            er.printStackTrace();
-        }*/
+
+    }
+    
+    /*defining get methods*/
     public String getExamYear(){
         return this.exam_Year;
     }
@@ -119,6 +89,8 @@ public class BachelorStudent extends Student { //inherit the super class student
         return this.z_score;
     }
     
+    
+    /*defining set methods*/
     public void setExamYear(String year){
         this.exam_Year = year;
     }
@@ -160,30 +132,4 @@ public class BachelorStudent extends Student { //inherit the super class student
     }
         
 }
-    /*public void setStu_Id(String std){
-        this.stu_Id = std;
-    }*/
-
-    /*BachelorStudent(int parseInt, String text, String text0, String text1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }*/
     
-    /*public String getExamYear(){
-        return this.exam_Year;
-    }
-    
-    public String getDistrict(){
-        return this.district;
-    }
-    
-    public int getIslandRank(){
-        return this.island_Rank;
-    }
-    
-    //public String getResults(){
-        //return this.AL_Results;
-    //}
-    
-    public void set
-   
-}*/
