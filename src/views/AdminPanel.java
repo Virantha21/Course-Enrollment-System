@@ -1628,8 +1628,8 @@ public class AdminPanel extends javax.swing.JFrame {
 
     private void logoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutButtonActionPerformed
         setVisible(false);
-            Login lgp = new Login();
-            lgp.setVisible(true);
+           Login lgp = new Login();
+           lgp.setVisible(true);
     }//GEN-LAST:event_logoutButtonActionPerformed
 
     private void insPanelMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insPanelMousePressed
