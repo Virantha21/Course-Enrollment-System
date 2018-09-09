@@ -203,7 +203,6 @@ public class Login extends javax.swing.JFrame {
             String password = passwordField.getText();
             String username = usernameField.getText();
 
-            
             rs = db.login(username, password);
 
             if(rs.next()){
